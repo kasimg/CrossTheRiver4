@@ -1,0 +1,153 @@
+2019-04-28T03:27:05.832Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-28T03:27:05.952Z - normal: Initializing Asset Database
+2019-04-28T03:27:05.956Z - normal: checking language setting...
+2019-04-28T03:27:05.957Z - normal: Language: zh
+2019-04-28T03:27:06.937Z - success: preview server running at http://localhost:7456
+2019-04-28T03:27:06.953Z - success: protocol editor-framework registered
+2019-04-28T03:27:06.953Z - success: protocol app registered
+2019-04-28T03:27:06.953Z - success: protocol theme registered
+2019-04-28T03:27:06.953Z - success: protocol packages registered
+2019-04-28T03:27:06.953Z - success: protocol uuid registerred
+2019-04-28T03:27:06.953Z - success: protocol db registerred
+2019-04-28T03:27:06.954Z - success: protocol thumbnail registerred
+2019-04-28T03:27:06.954Z - success: protocol unpack registerred
+2019-04-28T03:27:06.954Z - success: protocol disable-commonjs registerred
+2019-04-28T03:27:07.053Z - normal: connected!
+2019-04-28T03:27:07.055Z - normal: Check project /Users/admin/Documents/cocos/CrossTheRiver4
+2019-04-28T03:27:07.057Z - normal: Initializing project /Users/admin/Documents/cocos/CrossTheRiver4
+2019-04-28T03:27:07.619Z - normal: Initializing Cocos2d
+2019-04-28T03:27:08.656Z - normal: Initializing engine extends
+2019-04-28T03:27:08.683Z - success: asset-db-debugger loaded
+2019-04-28T03:27:08.686Z - success: baidu-adapter loaded
+2019-04-28T03:27:08.689Z - success: color-picker loaded
+2019-04-28T03:27:08.794Z - success: fb-audience-network loaded
+2019-04-28T03:27:08.850Z - success: fb-live-stream loaded
+2019-04-28T03:27:08.866Z - success: google-play-instant loaded
+2019-04-28T03:27:08.876Z - success: huawei-runtime loaded
+2019-04-28T03:27:08.877Z - success: jsb-adapter loaded
+2019-04-28T03:27:08.886Z - success: oppo-runtime loaded
+2019-04-28T03:27:08.896Z - success: package-manager loaded
+2019-04-28T03:27:09.061Z - success: qqplay-adapter loaded
+2019-04-28T03:27:09.066Z - success: runtime-dev-tools loaded
+2019-04-28T03:27:09.076Z - success: sdkbox loaded
+2019-04-28T03:27:09.085Z - success: tester loaded
+2019-04-28T03:27:09.093Z - success: ui-grid loaded
+2019-04-28T03:27:09.101Z - success: ui-kit-preview-extra loaded
+2019-04-28T03:27:09.108Z - success: ui-kit-preview loaded
+2019-04-28T03:27:09.114Z - success: ui-kit loaded
+2019-04-28T03:27:09.122Z - success: ui-tree loaded
+2019-04-28T03:27:09.131Z - success: vivo-runtime loaded
+2019-04-28T03:27:09.134Z - success: weapp-adapter loaded
+2019-04-28T03:27:09.184Z - success: assets loaded
+2019-04-28T03:27:09.188Z - success: builder loaded
+2019-04-28T03:27:09.505Z - success: cocos-services loaded
+2019-04-28T03:27:09.511Z - success: console loaded
+2019-04-28T03:27:09.553Z - success: fb-instant-games loaded
+2019-04-28T03:27:09.559Z - success: google-instant-games loaded
+2019-04-28T03:27:09.566Z - success: hierarchy loaded
+2019-04-28T03:27:09.570Z - success: inspector loaded
+2019-04-28T03:27:09.572Z - success: keystore loaded
+2019-04-28T03:27:09.581Z - success: node-library loaded
+2019-04-28T03:27:09.583Z - success: package-asset loaded
+2019-04-28T03:27:09.587Z - success: preferences loaded
+2019-04-28T03:27:09.592Z - success: project-exporter loaded
+2019-04-28T03:27:09.599Z - success: project-importer loaded
+2019-04-28T03:27:09.603Z - success: project-settings loaded
+2019-04-28T03:27:09.610Z - success: scene loaded
+2019-04-28T03:27:09.612Z - success: simulator-debugger loaded
+2019-04-28T03:27:09.616Z - success: sprite-editor loaded
+2019-04-28T03:27:09.621Z - success: store loaded
+2019-04-28T03:27:09.627Z - success: timeline loaded
+2019-04-28T03:27:10.754Z - normal: Loading packages
+2019-04-28T03:27:10.764Z - normal: Watching packages
+2019-04-28T03:27:10.946Z - normal: Run Application
+2019-04-28T03:27:11.281Z - info: Cocos Services load base data!
+2019-04-28T03:41:32.266Z - success: VS Code extension installed to /Users/admin/.vscode/extensions
+2019-04-28T03:41:35.014Z - success: API data generated and copied to /Users/admin/Documents/cocos/CrossTheRiver4/creator.d.ts
+2019-04-28T03:41:38.268Z - success: Compiling task has been added to .vscode/tasks.json, please run "compile" task in VS Code to trigger compile in Cocos Creator.
+2019-04-28T03:46:00.344Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver4/assets/GameData.json, message: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver4/assets/GameData.json: Unexpected token p in JSON at position 4
+    at JSON.parse (<anonymous>)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/fire-fs/node_modules/jsonfile/index.js:36:18
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/graceful-fs/graceful-fs.js:90:16
+    at tryToString (fs.js:449:3)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:436:12)
+2019-04-28T05:15:04.949Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver4/assets/GameData.json, message: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver4/assets/GameData.json: Unexpected token : in JSON at position 53
+    at JSON.parse (<anonymous>)
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/fire-fs/node_modules/jsonfile/index.js:36:18
+    at /Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/graceful-fs/graceful-fs.js:90:16
+    at tryToString (fs.js:449:3)
+    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:436:12)
+2019-04-28T05:37:00.071Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:26519
+2019-04-28T05:37:00.082Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:26520
+2019-04-28T05:40:08.060Z - warn: The Asset used by node "Animal" is missing. Detailed information:
+Node path: "Animal"
+Missing uuid: "bd5ba210-50b7-435e-8e16-bec76407f390"
+
+2019-04-28T05:47:12.167Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:30361
+2019-04-28T06:21:23.968Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36470
+2019-04-28T08:22:45.731Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver4/assets/Script/Animal.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver4/assets/Script/Animal.js: "crossAction" is read-only
+  85 | 
+  86 |     if (this.posInfo === this.data.json.posInfo.LEFT_STAND_POINT) {
+> 87 |       crossAction = cc.moveTo(this.crossRiverTimeConsuming, bridgeCom.standPoints[this.standPointIndex].rightPos.x, bridgeCom.standPoints[this.standPointIndex].rightPos.y);
+     |       ^
+  88 |       this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
+  89 |     } else {
+  90 |       crossAction = cc.moveTo(this.crossRiverTimeConsuming, bridgeCom.standPoints[this.standPointIndex].leftPos.x, bridgeCom.standPoints[this.standPointIndex].leftPos.y);
+    at File.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-core/lib/transformation/file/index.js:431:15)
+    at NodePath.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/index.js:140:26)
+    at PluginPass.Scope (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-plugin-check-es2015-constants/lib/index.js:35:29)
+    at PluginPass.newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:318:17)
+    at newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:276:21)
+    at NodePath._call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:76:18)
+    at NodePath.call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:48:17)
+    at NodePath.visit (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:105:12)
+    at TraversalContext.visitQueue (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:150:16)
+    at TraversalContext.visitMultiple (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:103:17)
+2019-04-28T08:22:45.784Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver4/assets/Script/GoBtn.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver4/assets/Script/GoBtn.js: Unexpected token (24:4)
+  22 |       passage.node.runAction(passage.crossRiver());
+  23 |       passage.
+> 24 |     });
+     |     ^
+  25 |     // console.log(bridgeNode, bridgeCom);
+  26 |   },
+  27 | 
+    at Parser.pp$5.raise (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4454:13)
+    at Parser.pp.unexpected (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:1761:8)
+    at Parser.pp$3.parseIdentifier (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:4332:10)
+    at Parser.pp$3.parseSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3517:30)
+    at Parser.pp$3.parseExprSubscripts (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3504:15)
+    at Parser.pp$3.parseMaybeUnary (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3474:19)
+    at Parser.pp$3.parseExprOps (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3344:19)
+    at Parser.pp$3.parseExpression (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babylon/lib/index.js:3306:19)
+2019-04-28T08:23:48.803Z - failed: [db-task][sync-changes] Failed to import asset /Users/admin/Documents/cocos/CrossTheRiver4/assets/Script/Animal.js, message: Compile error: SyntaxError: /Users/admin/Documents/cocos/CrossTheRiver4/assets/Script/Animal.js: "crossAction" is read-only
+  85 |     console.log(this.posInfo);
+  86 |     if (this.posInfo === this.data.json.posInfo.LEFT_STAND_POINT) {
+> 87 |       crossAction = cc.moveTo(this.crossRiverTimeConsuming, bridgeCom.standPoints[this.standPointIndex].rightPos.x, bridgeCom.standPoints[this.standPointIndex].rightPos.y);
+     |       ^
+  88 |       this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
+  89 |     } else {
+  90 |       crossAction = cc.moveTo(this.crossRiverTimeConsuming, bridgeCom.standPoints[this.standPointIndex].leftPos.x, bridgeCom.standPoints[this.standPointIndex].leftPos.y);
+    at File.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-core/lib/transformation/file/index.js:431:15)
+    at NodePath.buildCodeFrameError (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/index.js:140:26)
+    at PluginPass.Scope (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-plugin-check-es2015-constants/lib/index.js:35:29)
+    at PluginPass.newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:318:17)
+    at newFn (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/visitors.js:276:21)
+    at NodePath._call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:76:18)
+    at NodePath.call (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:48:17)
+    at NodePath.visit (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/path/context.js:105:12)
+    at TraversalContext.visitQueue (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:150:16)
+    at TraversalContext.visitMultiple (/Applications/CocosCreator.app/Contents/Resources/app.asar/node_modules/babel-traverse/lib/context.js:103:17)
+2019-04-28T08:47:36.973Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:64879
+2019-04-28T09:27:52.624Z - failed: load script [/Users/admin/Documents/cocos/CrossTheRiver4/temp/quick-scripts/assets/Script/GoBtn.js] failed : Error: ENOENT: no such file or directory, open '/Users/admin/Documents/cocos/CrossTheRiver4/temp/quick-scripts/assets/Script/GoBtn.js'
+    at Object.fs.openSync (fs.js:584:18)
+    at Object.module.(anonymous function) [as openSync] (ELECTRON_ASAR.js:191:20)
+    at Object.fs.readFileSync (fs.js:491:33)
+    at Object.fs.readFileSync (ELECTRON_ASAR.js:528:29)
+    at Object.Module._extensions..js (module.js:579:20)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)

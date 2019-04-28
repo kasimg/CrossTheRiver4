@@ -1,0 +1,110 @@
+{
+  "animalScale": 0.15,
+  "animals": [
+    {
+      "name": "cheetah",
+      "chineseName": "猎豹",
+      "timeConsuming": 1,
+      "leftPos": {
+        "x": -408,
+        "y": 157
+      },
+      "rightPos": {
+        "x": 345,
+        "y": 113
+      }
+    },
+    {
+      "name": "deer",
+      "chineseName": "鹿",
+      "timeConsuming": 3,
+      "leftPos": {
+        "x": -408,
+        "y": 54
+      },
+      "rightPos": {
+        "x": 345,
+        "y": 10
+      }
+    },
+    {
+      "name": "boar",
+      "chineseName": "野猪",
+      "timeConsuming": 6,
+      "leftPos": {
+        "x": -408,
+        "y": -42
+      },
+      "rightPos": {
+        "x": 345,
+        "y": -86
+      }
+    },
+    {
+      "name": "koala",
+      "chineseName": "考拉",
+      "timeConsuming": 8,
+      "leftPos": {
+        "x": -408,
+        "y": -150
+      },
+      "rightPos": {
+        "x": 345,
+        "y": -194
+      }
+    },
+    {
+      "name": "sloth",
+      "chineseName": "树懒",
+      "timeConsuming": 12,
+      "leftPos": {
+        "x": -408,
+        "y": -234
+      },
+      "rightPos": {
+        "x": 345,
+        "y": -278
+      }
+    }
+  ],
+  "lantern": {
+    "name": "lantern",
+    "leftPos": {
+      "x": -171,
+      "y": -41
+    },
+    "rightPos": {
+      "x": 182,
+      "y": -156
+    }
+  },
+  "leftAssemblePoint": [
+    {
+      "x": -206,
+      "y": 0
+    },
+    {
+      "x": -220,
+      "y": -62
+    }
+  ],
+  "rightAssemblePoint": [
+    {
+      "x": 150,
+      "y": -108
+    },
+    {
+      "x": 123,
+      "y": -172
+    }
+  ],
+  "bridge": {
+    "passageNum": 2
+  },
+  "posInfo": {
+    "LEFT_RIVER_BANK": 0,
+    "LEFT_STAND_POINT": 1,
+    "RIGHT_STAND_POINT": 2,
+    "RIGHT_RIVER_BANK": 3
+  }
+}

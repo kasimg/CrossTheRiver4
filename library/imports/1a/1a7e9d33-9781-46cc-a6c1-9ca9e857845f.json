@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "boar",
+    "texture": "89869059-2c1f-4c03-8ae2-b3cf05fa8c58",
+    "atlas": "",
+    "rect": [
+      0,
+      67,
+      512,
+      378
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

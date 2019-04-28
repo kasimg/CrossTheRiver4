@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cheetah",
+    "texture": "9150eb80-150a-45be-a18c-e14ef39d7750",
+    "atlas": "",
+    "rect": [
+      0,
+      35,
+      512,
+      442
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      512,
+      512
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
