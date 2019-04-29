@@ -6,6 +6,8 @@ cc._RF.push(module, '9d833jSFk1My4nt5AAmnGgi', 'GoBtn', __filename);
 
 var _Utils = require('./Utils');
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 //  go按钮对象
 cc.Class({
   extends: cc.Component,
@@ -34,7 +36,7 @@ cc.Class({
 
     //  乘客移动
     passages.forEach(function (passage) {
-      passage.setTimeConsuming(timeConsuming);
+      passage.setTimeConsuming(timeConsuming / 3); //  让实际运动时间减少一点
       passage.node.runAction(cc.sequence(passage.crossRiver(), cc.callFunc(function () {
         passage.toggleBridgePosInfo();
         // this.updateTimeConsuming();
@@ -42,10 +44,13 @@ cc.Class({
     });
 
     //  灯笼移动
-    lanternCom.setTimeConsuming(timeConsuming);
+    lanternCom.setTimeConsuming(timeConsuming / 3);
     lanternCom.node.runAction(cc.sequence(lanternCom.move(), cc.callFunc(function () {
       lanternCom.toggleBridgePosInfo();
       _this.updateTimeConsuming();
+
+      //  过河之后恢复点击
+      _Utils.resumeMouseDownEvents.apply(undefined, _toConsumableArray(_this.mainScriptCom.animalComs).concat([_this.mainScriptCom.goBtnNode.getComponent('GoBtn')]));
     })));
     // lanternCom.move();
   },
@@ -54,6 +59,9 @@ cc.Class({
   //  按钮点击事件
   onMouseDown: function onMouseDown() {
     var bridgeCom = this.mainScriptCom.bridgeNode.getComponent('Bridge');
+
+    //  取消所有点击事件
+    _Utils.removeMouseDownEvents.apply(undefined, _toConsumableArray(this.mainScriptCom.animalComs).concat([this.mainScriptCom.goBtnNode.getComponent('GoBtn')]));
     if (!bridgeCom.isEmpty()) {
       this.moveAnimalsAndLantern();
     }
@@ -90,11 +98,29 @@ cc.Class({
 
   //  更新总耗时的显示
   updateTimeConsuming: function updateTimeConsuming() {
-    console.log('update');
+    // console.log('update')
     var timer = this.mainScriptCom.timer;
     var bridgeCom = this.mainScriptCom.bridgeNode.getComponent('Bridge');
     this.timeConsumingSum += bridgeCom.getTimeConsuming();
     timer.string = '总耗时: ' + this.timeConsumingSum + '秒';
+
+    //  判断是否游戏结束
+    if (this.ifGameOver()) {
+      this.gameOver();
+    }
+  },
+
+
+  //  判断游戏是否结束
+  ifGameOver: function ifGameOver() {
+    if (this.timeConsumingSum > 30) return true;
+    return false;
+  },
+
+
+  //  游戏结束时进行的操作
+  gameOver: function gameOver() {
+    cc.director.loadScene('gameOver');
   },
 
 
@@ -120,13 +146,19 @@ cc.Class({
   bindMouseLeaveEvent: function bindMouseLeaveEvent() {
     this.node.on(cc.Node.EventType.MOUSE_LEAVE, this.onMouseLeave, this);
   },
+
+
+  //  移除鼠标点击事件
+  removeMouseDownEvent: function removeMouseDownEvent() {
+    this.node.off(cc.Node.EventType.MOUSE_DOWN, this.onMouseDown, this);
+  },
   onLoad: function onLoad() {
     this.initTimeConsumingSum();
     this.bindMouseDownEvent();
     this.bindMouseEnterEvent();
     this.bindMouseLeaveEvent();
     (0, _Utils.bindCursorEvent)(this.node, this);
-    (0, _Utils.bindScaleEvent)(this.node, this, 0.21, 0.19);
+    (0, _Utils.bindScaleEvent)(this.node, this, 0.2);
     // this.updateTimeConsuming();
     // this.node.on(cc.Node.EventType.MOUSE_ENTER, () => {console.log('a')}, this);
     // this.node.on(cc.Node.EventType.MOUSE_ENTER, () => {console.log('b')}, this);

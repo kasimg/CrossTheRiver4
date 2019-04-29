@@ -80,6 +80,24 @@ cc.Class({
   initGoBtnNode: function initGoBtnNode() {
     this.goBtnNode.getComponent('GoBtn').mainScriptCom = this;
   },
+
+
+  //  判断是否所有动物都在右岸
+  ifSucceed: function ifSucceed() {
+    var _this2 = this;
+
+    if (this.animalComs.filter(function (animal) {
+      // this.data.json.posInfo.RIGHT_RIVER_BANK
+      return animal.posInfo === _this2.data.json.posInfo.RIGHT_RIVER_BANK;
+    }).length === this.animalComs.length) return true;
+    return false;
+  },
+
+
+  //  游戏胜利的回调函数
+  succeed: function succeed() {
+    cc.director.loadScene('succeed');
+  },
   onLoad: function onLoad() {
     // console.log(this.data);
     this.createAnimalNodes();

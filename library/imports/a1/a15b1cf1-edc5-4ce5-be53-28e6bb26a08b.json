@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "succeed",
+    "texture": "6ba49172-8909-4935-afdc-dc0855d42ba8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1920,
+      1200
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1920,
+      1200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
