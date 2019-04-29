@@ -1,65 +1,169 @@
-2019-04-29T08:05:40.822Z - normal: Load ~/.CocosCreator/settings.json
-2019-04-29T08:05:40.896Z - normal: Initializing Asset Database
-2019-04-29T08:05:40.900Z - normal: checking language setting...
-2019-04-29T08:05:40.900Z - normal: Language: zh
-2019-04-29T08:05:41.802Z - success: preview server running at http://localhost:7456
-2019-04-29T08:05:41.818Z - success: protocol editor-framework registered
-2019-04-29T08:05:41.819Z - success: protocol app registered
-2019-04-29T08:05:41.819Z - success: protocol theme registered
-2019-04-29T08:05:41.819Z - success: protocol packages registered
-2019-04-29T08:05:41.820Z - success: protocol uuid registerred
-2019-04-29T08:05:41.820Z - success: protocol db registerred
-2019-04-29T08:05:41.820Z - success: protocol thumbnail registerred
-2019-04-29T08:05:41.821Z - success: protocol unpack registerred
-2019-04-29T08:05:41.821Z - success: protocol disable-commonjs registerred
-2019-04-29T08:05:41.900Z - normal: connected!
-2019-04-29T08:05:41.901Z - normal: Check project /Users/admin/Documents/cocos/CrossTheRiver4
-2019-04-29T08:05:41.903Z - normal: Initializing project /Users/admin/Documents/cocos/CrossTheRiver4
-2019-04-29T08:05:42.405Z - normal: Initializing Cocos2d
-2019-04-29T08:05:43.523Z - normal: Initializing engine extends
-2019-04-29T08:05:43.551Z - success: asset-db-debugger loaded
-2019-04-29T08:05:43.554Z - success: baidu-adapter loaded
-2019-04-29T08:05:43.556Z - success: color-picker loaded
-2019-04-29T08:05:43.662Z - success: fb-audience-network loaded
-2019-04-29T08:05:43.737Z - success: fb-live-stream loaded
-2019-04-29T08:05:43.751Z - success: google-play-instant loaded
-2019-04-29T08:05:43.761Z - success: huawei-runtime loaded
-2019-04-29T08:05:43.764Z - success: jsb-adapter loaded
-2019-04-29T08:05:43.774Z - success: oppo-runtime loaded
-2019-04-29T08:05:43.784Z - success: package-manager loaded
-2019-04-29T08:05:43.951Z - success: qqplay-adapter loaded
-2019-04-29T08:05:43.955Z - success: runtime-dev-tools loaded
-2019-04-29T08:05:43.964Z - success: sdkbox loaded
-2019-04-29T08:05:43.974Z - success: tester loaded
-2019-04-29T08:05:43.984Z - success: ui-grid loaded
-2019-04-29T08:05:43.990Z - success: ui-kit-preview-extra loaded
-2019-04-29T08:05:43.997Z - success: ui-kit-preview loaded
-2019-04-29T08:05:44.004Z - success: ui-kit loaded
-2019-04-29T08:05:44.011Z - success: ui-tree loaded
-2019-04-29T08:05:44.021Z - success: vivo-runtime loaded
-2019-04-29T08:05:44.023Z - success: weapp-adapter loaded
-2019-04-29T08:05:44.075Z - success: assets loaded
-2019-04-29T08:05:44.080Z - success: builder loaded
-2019-04-29T08:05:44.406Z - success: cocos-services loaded
-2019-04-29T08:05:44.414Z - success: console loaded
-2019-04-29T08:05:44.466Z - success: fb-instant-games loaded
-2019-04-29T08:05:44.471Z - success: google-instant-games loaded
-2019-04-29T08:05:44.478Z - success: hierarchy loaded
-2019-04-29T08:05:44.483Z - success: inspector loaded
-2019-04-29T08:05:44.485Z - success: keystore loaded
-2019-04-29T08:05:44.492Z - success: node-library loaded
-2019-04-29T08:05:44.497Z - success: package-asset loaded
-2019-04-29T08:05:44.500Z - success: preferences loaded
-2019-04-29T08:05:44.505Z - success: project-exporter loaded
-2019-04-29T08:05:44.513Z - success: project-importer loaded
-2019-04-29T08:05:44.517Z - success: project-settings loaded
-2019-04-29T08:05:44.525Z - success: scene loaded
-2019-04-29T08:05:44.527Z - success: simulator-debugger loaded
-2019-04-29T08:05:44.531Z - success: sprite-editor loaded
-2019-04-29T08:05:44.536Z - success: store loaded
-2019-04-29T08:05:44.542Z - success: timeline loaded
-2019-04-29T08:05:46.003Z - normal: Loading packages
-2019-04-29T08:05:46.017Z - normal: Watching packages
-2019-04-29T08:05:46.165Z - normal: Run Application
-2019-04-29T08:05:46.488Z - info: Cocos Services load base data!
-2019-04-29T08:56:37.821Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:7766
+2019-04-29T10:46:43.040Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-29T10:46:44.190Z - normal: Initializing Asset Database
+2019-04-29T10:46:44.193Z - normal: checking language setting...
+2019-04-29T10:46:44.193Z - normal: Language: zh
+2019-04-29T10:46:45.117Z - success: preview server running at http://localhost:7456
+2019-04-29T10:46:45.119Z - success: protocol editor-framework registered
+2019-04-29T10:46:45.119Z - success: protocol app registered
+2019-04-29T10:46:45.119Z - success: protocol theme registered
+2019-04-29T10:46:45.120Z - success: protocol packages registered
+2019-04-29T10:46:45.120Z - success: protocol uuid registerred
+2019-04-29T10:46:45.120Z - success: protocol db registerred
+2019-04-29T10:46:45.120Z - success: protocol thumbnail registerred
+2019-04-29T10:46:45.120Z - success: protocol unpack registerred
+2019-04-29T10:46:45.120Z - success: protocol disable-commonjs registerred
+2019-04-29T10:46:45.375Z - normal: connected!
+2019-04-29T10:46:45.377Z - normal: Check project C:\h5Game\CrossTheRiver4
+2019-04-29T10:46:45.379Z - normal: Initializing project C:\h5Game\CrossTheRiver4
+2019-04-29T10:46:45.914Z - normal: Initializing Cocos2d
+2019-04-29T10:46:46.923Z - normal: Initializing engine extends
+2019-04-29T10:46:46.955Z - success: asset-db-debugger loaded
+2019-04-29T10:46:46.956Z - success: baidu-adapter loaded
+2019-04-29T10:46:46.958Z - success: code-editor loaded
+2019-04-29T10:46:46.959Z - success: color-picker loaded
+2019-04-29T10:46:47.075Z - success: fb-audience-network loaded
+2019-04-29T10:46:47.161Z - success: fb-live-stream loaded
+2019-04-29T10:46:47.166Z - success: google-play-instant loaded
+2019-04-29T10:46:47.173Z - success: huawei-runtime loaded
+2019-04-29T10:46:47.174Z - success: jsb-adapter loaded
+2019-04-29T10:46:47.180Z - success: oppo-runtime loaded
+2019-04-29T10:46:47.184Z - success: package-manager loaded
+2019-04-29T10:46:47.347Z - success: qqplay-adapter loaded
+2019-04-29T10:46:47.350Z - success: runtime-dev-tools loaded
+2019-04-29T10:46:47.355Z - success: sdkbox loaded
+2019-04-29T10:46:47.359Z - success: tester loaded
+2019-04-29T10:46:47.361Z - success: ui-grid loaded
+2019-04-29T10:46:47.363Z - success: ui-kit-preview-extra loaded
+2019-04-29T10:46:47.366Z - success: ui-kit-preview loaded
+2019-04-29T10:46:47.368Z - success: ui-kit loaded
+2019-04-29T10:46:47.371Z - success: ui-tree loaded
+2019-04-29T10:46:47.376Z - success: vivo-runtime loaded
+2019-04-29T10:46:47.377Z - success: weapp-adapter loaded
+2019-04-29T10:46:47.425Z - success: assets loaded
+2019-04-29T10:46:47.427Z - success: builder loaded
+2019-04-29T10:46:47.795Z - success: cocos-services loaded
+2019-04-29T10:46:47.801Z - success: console loaded
+2019-04-29T10:46:47.842Z - success: fb-instant-games loaded
+2019-04-29T10:46:47.844Z - success: google-instant-games loaded
+2019-04-29T10:46:47.848Z - success: hierarchy loaded
+2019-04-29T10:46:47.852Z - success: inspector loaded
+2019-04-29T10:46:47.854Z - success: keystore loaded
+2019-04-29T10:46:47.858Z - success: node-library loaded
+2019-04-29T10:46:47.860Z - success: package-asset loaded
+2019-04-29T10:46:47.861Z - success: preferences loaded
+2019-04-29T10:46:47.862Z - success: project-exporter loaded
+2019-04-29T10:46:47.864Z - success: project-importer loaded
+2019-04-29T10:46:47.866Z - success: project-settings loaded
+2019-04-29T10:46:47.871Z - success: scene loaded
+2019-04-29T10:46:47.873Z - success: simulator-debugger loaded
+2019-04-29T10:46:47.875Z - success: sprite-editor loaded
+2019-04-29T10:46:47.879Z - success: store loaded
+2019-04-29T10:46:47.883Z - success: timeline loaded
+2019-04-29T10:46:49.370Z - info: Cocos Services load base data!
+2019-04-29T10:46:50.754Z - normal: Loading packages
+2019-04-29T10:46:50.761Z - normal: Watching packages
+2019-04-29T10:46:51.647Z - normal: Run Application
+2019-04-29T10:47:23.856Z - success: VS Code extension installed to C:\Users\Administrator\.vscode\extensions
+2019-04-29T10:47:25.493Z - success: VS Code extension installed to C:\Users\Administrator\.vscode\extensions
+2019-04-29T10:47:27.327Z - success: API data generated and copied to C:\h5Game\CrossTheRiver4\creator.d.ts
+2019-04-29T10:47:29.306Z - success: Compiling task has been added to .vscode/tasks.json, please run "compile" task in VS Code to trigger compile in Cocos Creator.
+2019-04-29T10:57:20.182Z - warn: The Asset used by component "cc.Sprite" is missing. Detailed information:
+Node path: "refresh"
+Missing uuid: "1edd9c7e-bff9-4251-87d3-bc9feffc4cbd"
+
+2019-04-29T10:58:52.833Z - warn: The 'type' attribute of 'MainScript.restartBtnNode' is undefined when loading script
+2019-04-29T11:08:53.796Z - normal: Start building with options : {
+  "actualPlatform": "web-desktop",
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "apiLevel": "",
+  "appABIs": [],
+  "appBundle": false,
+  "baidugame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "testappid",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "buildPath": "C:\\h5Game\\CrossTheRiver4\\build",
+  "debug": false,
+  "dest": "C:\\h5Game\\CrossTheRiver4\\build\\web-desktop",
+  "embedWebDebugger": false,
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "md5Cache": false,
+  "mergeStartScene": true,
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.CrossTheRiver4",
+  "platform": "web-desktop",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait",
+    "zip": false
+  },
+  "scenes": [
+    "32b9096f-c660-4e7a-80cd-5d210a6150af",
+    "3f26e055-cfb5-443d-bc90-144d3ade9cee",
+    "5652e778-101b-4904-a08d-bad862ac985a"
+  ],
+  "sourceMaps": false,
+  "startScene": "32b9096f-c660-4e7a-80cd-5d210a6150af",
+  "template": "link",
+  "title": "CrossTheRiver4",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wx6ac3f5090a6b99c5",
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "d457e380-e9bf-4c",
+  "zipCompressJs": true,
+  "project": "C:\\h5Game\\CrossTheRiver4",
+  "projectName": "CrossTheRiver4",
+  "debugBuildWorker": false
+}
+2019-04-29T11:08:53.802Z - normal: Building C:\h5Game\CrossTheRiver4
+2019-04-29T11:08:53.802Z - normal: Destination C:\h5Game\CrossTheRiver4\build\web-desktop
+2019-04-29T11:08:53.972Z - normal: Delete C:\h5Game\CrossTheRiver4\build\web-desktop\subpackages/**/*,C:\h5Game\CrossTheRiver4\build\web-desktop\**\*
+2019-04-29T11:09:15.478Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12449
+2019-04-29T11:09:31.014Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12472
+2019-04-29T11:10:04.326Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12481
+2019-04-29T11:10:04.337Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12482
+2019-04-29T11:10:04.337Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12483
+2019-04-29T11:10:04.337Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12484
+2019-04-29T11:10:04.338Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12485
+2019-04-29T11:10:04.338Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:12486
+2019-04-29T11:10:07.521Z - normal: Start building assets
+2019-04-29T11:10:07.521Z - normal: Start spawn build-worker
+2019-04-29T11:10:08.476Z - normal: Finish spawn build-worker
+2019-04-29T11:10:08.477Z - normal: Start init build-worker
+2019-04-29T11:10:12.568Z - normal: Finish init build-worker
+2019-04-29T11:10:12.569Z - normal: Start build-assets in worker
+2019-04-29T11:10:13.018Z - normal: Finish build-assets in worker
+2019-04-29T11:10:13.024Z - normal: Finish building assets
+2019-04-29T11:10:13.044Z - normal: Start building plugin scripts
+2019-04-29T11:10:13.061Z - normal: Generating main.js from C:\CocosCreator\resources\static\build-templates\shares\main.js
+2019-04-29T11:10:13.078Z - normal: Generating html from C:\CocosCreator\resources\static\build-templates\web-desktop\template\index.html
+2019-04-29T11:10:13.125Z - normal: Built to "C:\h5Game\CrossTheRiver4\build\web-desktop" successfully
