@@ -315,8 +315,8 @@
     "relativePath": "Scene"
   },
   "32b9096f-c660-4e7a-80cd-5d210a6150af": {
-    "asset": 1556530104977,
-    "meta": 1556530104991,
+    "asset": 1556531370705,
+    "meta": 1556531370722,
     "relativePath": "Scene/mainStage.fire"
   },
   "37f71bcc-e0d8-4d6d-af33-6a7cec1a050f": {
@@ -364,11 +364,6 @@
     "meta": 1556529314455,
     "relativePath": "Script/Utils.js"
   },
-  "7ba1d12a-c469-4e04-bf1f-0eff3db0ab02": {
-    "asset": 1556529881714,
-    "meta": 1556530098413,
-    "relativePath": "Script/MainScript.js"
-  },
   "01e22d93-fd04-4970-a0fe-ed472e835633": {
     "asset": 1556529956864,
     "meta": 1556530098413,
@@ -393,5 +388,15 @@
     "asset": 1556530417764,
     "meta": 1556530428829,
     "relativePath": "GameData.json"
+  },
+  "7ba1d12a-c469-4e04-bf1f-0eff3db0ab02": {
+    "asset": 1556531063500,
+    "meta": 1556531069965,
+    "relativePath": "Script/MainScript.js"
+  },
+  "4ecabf4c-d5f0-4401-9c7f-0072201223af": {
+    "asset": 1556531397032,
+    "meta": 1556531400015,
+    "relativePath": "Script/Tip.js"
   }
 }

@@ -40,6 +40,10 @@ cc.Class({
     timer: { //  显示一共消耗的时间
       default: null,
       type: cc.Label
+    },
+    tipBtn: {
+      default: null,
+      type: cc.Label
     }
   },
 
