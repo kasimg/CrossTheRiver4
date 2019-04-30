@@ -10,6 +10,15 @@ cc.Class({
     }
   },
 
+  //  判断动物是否能上桥
+  canGetOnTheBridge() {
+    const lanternCom = this.mainScriptCom.lanternNode.getComponent('Lantern');
+    // console.log(this.posInfo, lanternCom.posInfo);
+    if (this.posInfo === this.data.json.posInfo.LEFT_RIVER_BANK && lanternCom.posInfo === this.data.json.posInfo.LEFT_STAND_POINT) return true;
+    if (this.posInfo === this.data.json.posInfo.RIGHT_RIVER_BANK && lanternCom.posInfo === this.data.json.posInfo.RIGHT_STAND_POINT) return true;
+    return false;
+  },
+
   //  点击响应事件
   onMouseDown() {
     const bridgeNode = this.mainScriptCom.bridgeNode;
@@ -17,20 +26,25 @@ cc.Class({
     // console.log(bridgeNode, bridgeCom);
     // console.log(this.posInfo);
     let action = null;
-    
+
+    // if (this.canGetOnTheBridge()) {
     //  取消任何可以点击的部位的点击事件
     removeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
-    switch(this.posInfo) {
+
+    switch (this.posInfo) {
       case this.data.json.posInfo.LEFT_RIVER_BANK: {  //  在左岸，向左集合点移动
-        //  先更新桥上站位的信息
-        const pointIndex = bridgeCom.searchStandPoint();
-        console.log(pointIndex);
-        if (pointIndex !== -1) {
-          // console.log(pointIndex);
-          bridgeCom.getOn(this, pointIndex);
-          this.posInfo = this.data.json.posInfo.LEFT_STAND_POINT;
-          action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos);
-          // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos));
+        if (this.canGetOnTheBridge()) {
+
+          //  先更新桥上站位的信息
+          const pointIndex = bridgeCom.searchStandPoint();
+          console.log(pointIndex);
+          if (pointIndex !== -1) {
+            // console.log(pointIndex);
+            bridgeCom.getOn(this, pointIndex);
+            this.posInfo = this.data.json.posInfo.LEFT_STAND_POINT;
+            action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos);
+            // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos));
+          }
         }
         break;
       }
@@ -64,18 +78,23 @@ cc.Class({
         // this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
         // this.node.runAction(this.moveTo(this.rightPos));
 
-        //  先更新桥上站位的信息
-        const pointIndex = bridgeCom.searchStandPoint();
-        if (pointIndex !== -1) {
-          // console.log(pointIndex);
-          bridgeCom.getOn(this, pointIndex);
-          this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
-          action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos);
-          // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos));
+        if (this.canGetOnTheBridge()) {
+          // removeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
+          //  先更新桥上站位的信息
+          const pointIndex = bridgeCom.searchStandPoint();
+          if (pointIndex !== -1) {
+            // console.log(pointIndex);
+            bridgeCom.getOn(this, pointIndex);
+            this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
+            action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos);
+            // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos));
+          }
         }
         break;
       }
     }
+    // }
+
 
     //  开始移动
     if (action) {
@@ -84,10 +103,13 @@ cc.Class({
         resumeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
 
         //  检测是否游戏胜利
-        if(this.mainScriptCom.ifSucceed()) {
+        if (this.mainScriptCom.ifSucceed()) {
           this.mainScriptCom.succeed();
         }
-        }, this)));
+
+      }, this)));
+    } else {
+      resumeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
     }
   },
 
@@ -121,8 +143,8 @@ cc.Class({
   //  转换动物在桥上的位置状态
   toggleBridgePosInfo() {
     this.posInfo = this.posInfo === this.data.json.posInfo.LEFT_STAND_POINT
-    ? this.data.json.posInfo.RIGHT_STAND_POINT
-    : this.data.json.posInfo.LEFT_STAND_POINT;
+      ? this.data.json.posInfo.RIGHT_STAND_POINT
+      : this.data.json.posInfo.LEFT_STAND_POINT;
   },
 
   //  过河(特指过河的移动)

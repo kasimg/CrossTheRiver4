@@ -19,6 +19,16 @@ cc.Class({
     }
   },
 
+  //  判断动物是否能上桥
+  canGetOnTheBridge: function canGetOnTheBridge() {
+    var lanternCom = this.mainScriptCom.lanternNode.getComponent('Lantern');
+    // console.log(this.posInfo, lanternCom.posInfo);
+    if (this.posInfo === this.data.json.posInfo.LEFT_RIVER_BANK && lanternCom.posInfo === this.data.json.posInfo.LEFT_STAND_POINT) return true;
+    if (this.posInfo === this.data.json.posInfo.RIGHT_RIVER_BANK && lanternCom.posInfo === this.data.json.posInfo.RIGHT_STAND_POINT) return true;
+    return false;
+  },
+
+
   //  点击响应事件
   onMouseDown: function onMouseDown() {
     var _this = this;
@@ -29,21 +39,26 @@ cc.Class({
     // console.log(this.posInfo);
     var action = null;
 
+    // if (this.canGetOnTheBridge()) {
     //  取消任何可以点击的部位的点击事件
     _Utils.removeMouseDownEvents.apply(undefined, _toConsumableArray(this.mainScriptCom.animalComs).concat([this.mainScriptCom.goBtnNode.getComponent('GoBtn')]));
+
     switch (this.posInfo) {
       case this.data.json.posInfo.LEFT_RIVER_BANK:
         {
           //  在左岸，向左集合点移动
-          //  先更新桥上站位的信息
-          var pointIndex = bridgeCom.searchStandPoint();
-          console.log(pointIndex);
-          if (pointIndex !== -1) {
-            // console.log(pointIndex);
-            bridgeCom.getOn(this, pointIndex);
-            this.posInfo = this.data.json.posInfo.LEFT_STAND_POINT;
-            action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos);
-            // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos));
+          if (this.canGetOnTheBridge()) {
+
+            //  先更新桥上站位的信息
+            var pointIndex = bridgeCom.searchStandPoint();
+            console.log(pointIndex);
+            if (pointIndex !== -1) {
+              // console.log(pointIndex);
+              bridgeCom.getOn(this, pointIndex);
+              this.posInfo = this.data.json.posInfo.LEFT_STAND_POINT;
+              action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos);
+              // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].leftPos));
+            }
           }
           break;
         }
@@ -83,18 +98,23 @@ cc.Class({
           // this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
           // this.node.runAction(this.moveTo(this.rightPos));
 
-          //  先更新桥上站位的信息
-          var _pointIndex = bridgeCom.searchStandPoint();
-          if (_pointIndex !== -1) {
-            // console.log(pointIndex);
-            bridgeCom.getOn(this, _pointIndex);
-            this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
-            action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos);
-            // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos));
+          if (this.canGetOnTheBridge()) {
+            // removeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
+            //  先更新桥上站位的信息
+            var _pointIndex = bridgeCom.searchStandPoint();
+            if (_pointIndex !== -1) {
+              // console.log(pointIndex);
+              bridgeCom.getOn(this, _pointIndex);
+              this.posInfo = this.data.json.posInfo.RIGHT_STAND_POINT;
+              action = this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos);
+              // this.node.runAction(this.moveTo(bridgeCom.standPoints[this.standPointIndex].rightPos));
+            }
           }
           break;
         }
     }
+    // }
+
 
     //  开始移动
     if (action) {
@@ -107,6 +127,8 @@ cc.Class({
           _this.mainScriptCom.succeed();
         }
       }, this)));
+    } else {
+      _Utils.resumeMouseDownEvents.apply(undefined, _toConsumableArray(this.mainScriptCom.animalComs).concat([this.mainScriptCom.goBtnNode.getComponent('GoBtn')]));
     }
   },
 

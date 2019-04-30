@@ -369,11 +369,6 @@
     "meta": 1556530098413,
     "relativePath": "Script/Succeed.js"
   },
-  "1322eef3-2fba-4601-9eb0-ef41d0b905bd": {
-    "asset": 1556530259325,
-    "meta": 1556530290277,
-    "relativePath": "Script/Animal.js"
-  },
   "73993183-8158-49af-9949-803d571c2929": {
     "asset": 1556530167689,
     "meta": 1556530290341,
@@ -398,5 +393,10 @@
     "asset": 1556531397032,
     "meta": 1556531400015,
     "relativePath": "Script/Tip.js"
+  },
+  "1322eef3-2fba-4601-9eb0-ef41d0b905bd": {
+    "asset": 1556611804397,
+    "meta": 1556611832006,
+    "relativePath": "Script/Animal.js"
   }
 }
