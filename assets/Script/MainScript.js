@@ -38,7 +38,11 @@ cc.Class({
     tipBtn: {
       default: null,
       type: cc.Label,
-    }
+    },
+    restartBtnNode: {
+      default: null,
+      type: cc.Node,
+    },
   },
 
   //  创建动物节点
