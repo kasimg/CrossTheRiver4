@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 28,
-      "y": 65,
-      "width": 1280,
-      "height": 720,
+      "x": 18,
+      "y": 58,
+      "width": 1285,
+      "height": 723,
       "layout": {
         "children": [
           {
@@ -32,7 +32,7 @@
                 "width": 204
               }
             ],
-            "height": 636.21875,
+            "height": 601.7999877929688,
             "type": "dock-v",
             "width": 204
           },
@@ -47,7 +47,7 @@
                     ],
                     "height": 335.109375,
                     "type": "panel",
-                    "width": 501.984375
+                    "width": 491.6000061035156
                   },
                   {
                     "active": 0,
@@ -61,7 +61,7 @@
                 ],
                 "height": 335.109375,
                 "type": "dock-h",
-                "width": 767.984375
+                "width": 757.6000366210938
               },
               {
                 "active": 0,
@@ -71,12 +71,12 @@
                 ],
                 "height": 299.109375,
                 "type": "panel",
-                "width": 767.984375
+                "width": 757.6000366210938
               }
             ],
-            "height": 636.21875,
+            "height": 601.7999877929688,
             "type": "dock-v",
-            "width": 767.984375
+            "width": 757.6000366210938
           },
           {
             "active": 0,
@@ -84,7 +84,7 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 636.21875,
+            "height": 601.7999877929688,
             "type": "panel",
             "width": 304
           }
@@ -101,14 +101,15 @@
         "cocos-services",
         "scene"
       ]
-    }
+    },
+    "window-1557407053575": {}
   },
   "panels": {
     "builder": {
-      "x": 438,
-      "y": 41,
-      "width": 654,
-      "height": 722
+      "x": 436,
+      "y": 40,
+      "width": 669,
+      "height": 724
     }
   }
 }

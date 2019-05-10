@@ -52,6 +52,13 @@ cc.Class({
     removeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
     if (!bridgeCom.isEmpty()) {
       this.moveAnimalsAndLantern();
+      //  改变箭头方向
+      // this.node.rotation += 180;
+      cc.tween(this.node)
+      .to(0.2, { rotation: this.node.rotation + 180 })
+      .start();
+    } else {
+      resumeMouseDownEvents(...this.mainScriptCom.animalComs, this.mainScriptCom.goBtnNode.getComponent('GoBtn'));
     }
   },
 
