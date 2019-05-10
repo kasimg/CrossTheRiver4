@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ett-2-bg",
+    "texture": "6786ad4f-a6ca-4b3c-b710-c230a1a6544a",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1360,
+      760
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1360,
+      760
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
